@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Новый стильный шрифт */
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: white;
+    text-align: center;
+}
+
+/* Контейнер для центрирования и ограничения ширины */
+.container {
+    max-width: 800px; /* Сужает сайт */
+    margin: 0 auto; /* Центрирует */
+    padding: 20px;
+}
+
+/* Хедер */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Логотип */
+.logo {
+    max-width: 180px; /* Подстроен под макет */
+    margin-bottom: 15px; /* Отступ вниз */
+}
+
+/* Заголовки с прозрачным фоном и новым шрифтом */
+h1 {
+    font-size: 26px;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(74, 144, 226, 0.7); /* Полупрозрачный голубой */
+    padding: 12px 24px;
+    border-radius: 6px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(90, 155, 230, 0.7); /* Полупрозрачный светло-голубой */
+    padding: 10px 20px;
+    border-radius: 6px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    background-color: rgba(244, 200, 66, 0.7); /* Полупрозрачный золотистый */
+    padding: 10px 18px;
+    border-radius: 6px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+/* Общий стиль секций */
+section {
+    padding: 15px;
+    margin: 10px auto;
+    max-width: 750px; /* Делаем контент уже */
+}
+
+/* Блоки услуг и преимуществ */
+.service, .advantage {
+    background-color: rgba(30, 30, 30, 0.8); /* Темно-серый с прозрачностью */
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 6px;
+    max-width: 90%;
+}
+
+/* Изображения */
+img {
+    width: 100%; /* Растягиваются по контейнеру */
+    max-width: 400px; /* Подстроены под макет */
+    border-radius: 12px; /* Более мягкие углы */
+    display: block;
+    margin: 10px auto;
+}
+
+/* Списки (чтобы точки были перед текстом) */
+ul {
+    list-style-position: inside; /* Перемещает точки внутрь блока */
+    text-align: left; /* Выравнивание текста по левому краю */
+    padding-left: 20px; /* Добавляет отступ слева */
+}
+
+li {
+    margin-bottom: 6px; /* Отступ между пунктами списка */
+    font-size: 16px; /* Размер текста */
+    font-weight: 400;
+}
+
+/* Контакты */
+.contacts a {
+    color: #F4C842; /* Мягкий золотистый для ссылок */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer {
+    background-color: black;
+    padding: 15px;
+    font-size: 14px;
+}

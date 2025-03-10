@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+/* Общие стили */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F4F4;
+    color: #212529;
+}
+
+/* Контейнер */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Навигация */
+nav {
+    background: white;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #212529;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #0056b3;
+}
+
+/* Заголовки */
+h1, h2, h3 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #0056b3;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    color: #343A40;
+    text-align: center;
+}
+
+h3 {
+    font-size: 22px;
+    color: #6C757D;
+    text-align: center;
+}
+
+/* Основные секции */
+section {
+    background: white;
+    padding: 50px;
+    margin: 30px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 1100px;
+}
+
+/* Кнопки */
+.button {
+    background: #0056b3;
+    color: white;
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: #003e80;
+    transform: translateY(-3px);
+}
+
+/* Изображения */
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Карточки */
+.service, .advantage {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.service:hover, .advantage:hover {
+    transform: translateY(-5px);
+}
+
+/* Футер */
+footer {
+    background: #212529;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

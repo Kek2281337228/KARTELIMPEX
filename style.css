@@ -734,6 +734,52 @@ a {
     transition: 0.3s;
 }
 
+/* Общие стили для верхней панели */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    background-color: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Логотип */
+.top-bar .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    flex-shrink: 0; /* Чтобы не сжимался */
+}
+
+/* Меню */
+.top-bar .menu {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap; /* Если места мало, пункты переносятся */
+}
+
+/* Ссылки */
+.top-bar .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: background 0.3s ease, border-radius 0.3s ease;
+}
+
+.top-bar .menu a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
 /* Адаптив для мобильных устройств */
 @media screen and (max-width: 768px) {
     .top-bar {
@@ -744,18 +790,18 @@ a {
 
     .top-bar .logo {
         font-size: 18px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
 
     .top-bar .menu {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 8px;
     }
 
     .top-bar .menu a {
-        font-size: 14px;
-        padding: 5px 10px;
+        font-size: 13px;
+        padding: 6px 10px;
     }
 }
 
@@ -770,11 +816,13 @@ a {
     }
 
     .top-bar .menu {
+        flex-direction: column;
+        align-items: center;
         gap: 5px;
     }
 
     .top-bar .menu a {
         font-size: 12px;
-        padding: 4px 8px;
+        padding: 5px 8px;
     }
 }

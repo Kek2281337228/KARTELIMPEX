@@ -38,7 +38,7 @@ header {
 
 /* Логотип */
 .logo {
-    max-width: 180px; /* Подстроен под макет */
+    max-width: 250px; /* Подстроен под макет */
     margin-bottom: 15px; /* Отступ вниз */
 }
 
@@ -195,7 +195,7 @@ html {
 .catalog h2 {
     text-align: center;
     font-size: 28px;
-    color: #0056b3;
+    color: #white;
     margin-bottom: 20px;
 }
 
@@ -212,7 +212,7 @@ html {
     text-align: center;
     font-size: 26px;
     font-weight: bold;
-    color: #0056b3;
+    color: #white;
     margin-bottom: 20px;
 }
 
@@ -321,7 +321,7 @@ html {
     border-radius: 5px;
     font-size: 16px;
     font-weight: bold;
-    color: #333;
+    color: #000;
     text-transform: uppercase;
 }
 
@@ -341,5 +341,212 @@ html {
     background: #218838;
 }
 
+/* 1️⃣ АНИМАЦИЯ ПОЯВЛЕНИЯ КАТАЛОГА ПРИ ПРОКРУТКЕ */
+.catalog-container {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
 
+.catalog-container.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 2️⃣ ПЛАВНОЕ РАСКРЫТИЕ СКРЫТОГО КАТАЛОГА */
+.hidden {
+    display: none;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.hidden.show {
+    display: block;
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+/* 3️⃣ АНИМАЦИЯ КНОПОК ПРИ НАВЕДЕНИИ */
+.button {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 4️⃣ ЭФФЕКТ УВЕЛИЧЕНИЯ КАРТИНОК В КАТАЛОГЕ */
+.catalog-item img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.catalog-item:hover img {
+    transform: scale(1.1);
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-video {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Высота заголовка */
+    overflow: hidden;
+}
+
+.header-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.header-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5); /* Затемнение */
+}
+
+.header-overlay h1 {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.logo {
+    animation: logoBounce 1.5s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+@keyframes logoBounce {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+.parallax {
+    position: relative;
+    background-image: url('background.jpg'); /* Фон */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Высота блока */
+}
+
+
+.title {
+    position: relative;
+    top: 5px; /* Можно менять значение */
+}
+
+.header {
+    display: flex;
+    align-items: center; /* Выравнивание по вертикали */
+    justify-content: center; /* По центру по горизонтали */
+    height: 50px; /* Убедиcь, что высота нормальная */
+}
+
+.header-title {
+    transform: translateY(5px); /* Погнали вниз */
+}
+
+.header-title {
+    position: absolute;
+    top: 100px; /* Крути сюда нужное значение */
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    border-radius: 200px; /* Если хочешь скруглённые углы */
+}
+
+
+
+
+.header-video {
+    position: relative;
+}
+
+.header-video::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; /* Высота градиента */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(17, 17, 17, 1) 100%);
+    pointer-events: none; /* Чтобы градиент не мешал кликам */
+}
+
+
+
+.header-video video {
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.header-video {
+    position: relative;
+}
+
+.header-video {
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+    background: linear-gradient(to right, #0a0a0a, #222222);
+    padding: 10px 20px;
+    border-left: 5px solid #FFA500;
+    display: inline-block;
+}
+
+a {
+    color: inherit; /* Наследует цвет от родителя */
+    text-decoration: none; /* Убирает подчеркивание */
+}
+
+.section-title {
+    color: #fff !important; /* Белый текст, перекрывая все стили */
+}
 

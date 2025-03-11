@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+	
+
      <meta name="description" content="Kartel Impex - комплексное решение для импортных закупок, логистики и юридического сопровождения.">
      <meta name="keywords" content="Kartel Impex, логистика, таможенное оформление, закупки, импорт, доставка, картель импекс">
      <meta name="robots" content="index, follow">
@@ -11,6 +13,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<div class="header-video">
+    <video autoplay loop muted playsinline>
+        <source src="your-video.mp4" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+    </video>
+    <div class="header-overlay">
+        <h1>KARTEL IMPEX</h1>
+    </div>
+</div>
+
+	<div class="video-background">
+    <video autoplay loop muted playsinline>
+        <source src="https://cdn.videvo.net/videvo_files/video/free/2019-03/large_watermarked/181011_06_Australia_4k_012_preview.mp4" type="video/mp4">
+    </video>
+</div>
         <!-- Синее поле с пунктами меню -->
 <div class="top-bar">
     <ul>
@@ -25,13 +42,13 @@
 </div>
 
     <header>
-        <h1>KARTEL IMPEX</h1>
+        
         <img src="logo.png" alt="Kartel Impex Logo" class="logo">
     </header>
 
     <section class="about">
         <h2>О КОМПАНИИ</h2>
-        <p>KARTEL IMPEX</p>
+       
         <p>Комплексное решение для импортных закупок. Мы обеспечиваем полный цикл закупок материалов напрямую от производителей.</p>
         <img src="company_image.jpg" class="comp" alt="О компании">
     </section>
@@ -85,7 +102,7 @@
         </div>
     </section>
 <section class="catalog-container" id="catalog">
-    <h2>Каталог ДГУ</h2>
+    <h2>ДГУ</h2>
     <div class="catalog-grid">
 
         <div class="catalog-item">
@@ -154,7 +171,7 @@
     </div>
 </section>
 <section class="catalog-container" id="diesel-generators">
-    <h2>Дизельные генераторные установки HAITAI Power</h2>
+    <h2>ДГУ HAITAI Power</h2>
     <div class="catalog-grid">
 
         <!-- Генераторная установка Cummins -->
@@ -193,7 +210,7 @@
 </section>
 
 <section class="catalog-container" id="rosatom-products">
-    <h2>Продуктовая линейка РОСАТОМ НЕДРА</h2>
+    <h2>Редкоземельные ископаемые</h2>
     <div class="catalog-grid">
 
         <div class="catalog-item">
@@ -269,6 +286,38 @@
     <footer>
         <p>Мы обеспечиваем полный цикл логистических и закупочных операций с прозрачностью на каждом этапе.</p>
     </footer>
+<script>
+    // Плавное появление каталога при прокрутке
+    document.addEventListener("DOMContentLoaded", function() {
+        const catalogContainers = document.querySelectorAll('.catalog-container');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                }
+            });
+        }, { threshold: 0.2 });
+
+        catalogContainers.forEach(container => {
+            observer.observe(container);
+        });
+    });
+
+    // Кнопка "Показать ещё" с анимацией раскрытия
+    document.getElementById("showMoreBtn").addEventListener("click", function() {
+        var hiddenCatalog = document.getElementById("hiddenCatalog");
+        if (!hiddenCatalog.classList.contains("show")) {
+            hiddenCatalog.classList.add("show");
+            this.innerText = "Скрыть";
+        } else {
+            hiddenCatalog.classList.remove("show");
+            setTimeout(() => { hiddenCatalog.style.display = "none"; }, 500);
+            this.innerText = "Показать ещё";
+        }
+    });
+</script>
+
+
 </body>
 </html>
 

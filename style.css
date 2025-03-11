@@ -341,25 +341,13 @@ html {
     background: #218838;
 }
 
-/* 1️⃣ АНИМАЦИЯ ПОЯВЛЕНИЯ КАТАЛОГА ПРИ ПРОКРУТКЕ */
-.catalog-container {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-}
 
 .catalog-container.show {
     opacity: 1;
     transform: translateY(0);
 }
 
-/* 2️⃣ ПЛАВНОЕ РАСКРЫТИЕ СКРЫТОГО КАТАЛОГА */
-.hidden {
-    display: none;
-    opacity: 0;
-    transform: scaleY(0);
-    transform-origin: top;
-    transition: opacity 0.5s ease, transform 0.5s ease;
+
 }
 
 .hidden.show {

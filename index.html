@@ -108,6 +108,7 @@
     <h2>ДГУ RICARDO</h2>
     <div class="catalog-grid">
 
+        <!-- Первые 3 ДГУ (они сразу видны) -->
         <div class="catalog-item">
             <img src="ricardo_30kw.jpg" alt="Ricardo 30kW Diesel Generator">
             <h3>Ricardo 30kW Diesel Generator</h3>
@@ -129,50 +130,36 @@
             <a href="generator_ricardo_50kw.html" class="button">Подробнее</a>
         </div>
 
-        <div class="catalog-item">
-            <img src="ricardo_75kw.jpg" alt="Ricardo 75kW Diesel Generator">
-            <h3>Ricardo 75kW Diesel Generator</h3>
-            <p>Дизельный генератор с двигателем Ricardo R6105ZD.</p>
-            <a href="generator_ricardo_75kw.html" class="button">Подробнее</a>
-        </div>
+        <!-- Скрытые ДГУ -->
+        <div id="hidden-dgu" class="hidden">
+            <div class="catalog-item">
+                <img src="ricardo_75kw.jpg" alt="Ricardo 75kW Diesel Generator">
+                <h3>Ricardo 75kW Diesel Generator</h3>
+                <p>Дизельный генератор с двигателем Ricardo R6105ZD.</p>
+                <a href="generator_ricardo_75kw.html" class="button">Подробнее</a>
+            </div>
 
-        <div class="catalog-item">
-            <img src="ricardo_100kw.jpg" alt="Ricardo 100kW Diesel Generator">
-            <h3>Ricardo 100kW Diesel Generator</h3>
-            <p>Дизельный генератор с двигателем Ricardo R6105AZLD.</p>
-            <a href="generator_ricardo_100kw.html" class="button">Подробнее</a>
-        </div>
+            <div class="catalog-item">
+                <img src="ricardo_100kw.jpg" alt="Ricardo 100kW Diesel Generator">
+                <h3>Ricardo 100kW Diesel Generator</h3>
+                <p>Дизельный генератор с двигателем Ricardo R6105AZLD.</p>
+                <a href="generator_ricardo_100kw.html" class="button">Подробнее</a>
+            </div>
 
-        <div class="catalog-item">
-            <img src="ricardo_120kw.jpg" alt="Ricardo 120kW Diesel Generator">
-            <h3>Ricardo 120kW Diesel Generator</h3>
-            <p>Дизельный генератор с двигателем Ricardo R6105IZLD.</p>
-            <a href="generator_ricardo_120kw.html" class="button">Подробнее</a>
-        </div>
-
-        <div class="catalog-item">
-            <img src="ricardo_150kw.jpg" alt="Ricardo 150kW Diesel Generator">
-            <h3>Ricardo 150kW Diesel Generator</h3>
-            <p>Дизельный генератор с двигателем Ricardo R6113AZLD.</p>
-            <a href="generator_ricardo_150kw.html" class="button">Подробнее</a>
-        </div>
-
-        <div class="catalog-item">
-            <img src="ricardo_200kw.jpg" alt="Ricardo 200kW Diesel Generator">
-            <h3>Ricardo 200kW Diesel Generator</h3>
-            <p>Дизельный генератор с двигателем Ricardo JW6D208B.</p>
-            <a href="generator_ricardo_200kw.html" class="button">Подробнее</a>
-        </div>
-
-        <div class="catalog-item">
-            <img src="ricardo_250kw.jpg" alt="Ricardo 250kW Diesel Generator">
-            <h3>Ricardo 250kW Diesel Generator</h3>
-            <p>Дизельный генератор с двигателем Ricardo JW10D288B.</p>
-            <a href="generator_ricardo_250kw.html" class="button">Подробнее</a>
+            <div class="catalog-item">
+                <img src="ricardo_120kw.jpg" alt="Ricardo 120kW Diesel Generator">
+                <h3>Ricardo 120kW Diesel Generator</h3>
+                <p>Дизельный генератор с двигателем Ricardo R6105IZLD.</p>
+                <a href="generator_ricardo_120kw.html" class="button">Подробнее</a>
+            </div>
         </div>
 
     </div>
+
+    <!-- Кнопка "Показать ещё" -->
+    <button id="show-more">Показать ещё</button>
 </section>
+
 <section class="catalog-container" id="diesel-generators">
     <h2>ДГУ HAITAI Power</h2>
     <div class="catalog-grid">
@@ -265,6 +252,19 @@
         }
     });
 </script>
+<script>
+    document.getElementById("show-more").addEventListener("click", function () {
+        var hiddenDgu = document.getElementById("hidden-dgu");
+        if (hiddenDgu.style.display === "none" || hiddenDgu.style.display === "") {
+            hiddenDgu.style.display = "flex";
+            this.innerText = "Скрыть";
+        } else {
+            hiddenDgu.style.display = "none";
+            this.innerText = "Показать ещё";
+        }
+    });
+</script>
+
 
 
 </body>

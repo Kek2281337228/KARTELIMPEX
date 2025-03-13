@@ -736,3 +736,15 @@ a {
     justify-content: center;
     gap: 20px;
 }
+
+.hidden {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.hidden.show {
+    max-height: 1500px; /* Достаточно большое значение, чтобы блок плавно открылся */
+    opacity: 1;
+}

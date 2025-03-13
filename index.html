@@ -130,8 +130,12 @@
             <a href="generator_ricardo_50kw.html" class="button">Подробнее</a>
         </div>
 
-        <!-- Скрытые ДГУ -->
-        <div id="hidden-dgu" class="hidden">
+    </div>
+
+    <!-- Блок со скрытыми ДГУ и HAITAI POWER -->
+    <div id="hidden-section" class="hidden">
+        <h2>ДГУ RICARDO (Продолжение)</h2>
+        <div class="catalog-grid">
             <div class="catalog-item">
                 <img src="ricardo_75kw.jpg" alt="Ricardo 75kW Diesel Generator">
                 <h3>Ricardo 75kW Diesel Generator</h3>
@@ -154,50 +158,35 @@
             </div>
         </div>
 
+        <h2>ДГУ HAITAI POWER</h2>
+        <div class="catalog-grid">
+            <div class="catalog-item">
+                <img src="cummins_generator.jpg" alt="Дизель-генераторная установка Cummins">
+                <h3>Дизель-генераторная установка Cummins</h3>
+                <p>Мощность: от 20 кВт до 1200 кВт<br>Двигатели серий M, N, K с различными конфигурациями цилиндров.</p>
+                <a href="https://ru.hitepower.com/product-cummins-diesel-electric-power-generator-set.html" class="button" target="_blank">Подробнее</a>
+            </div>
+
+            <div class="catalog-item">
+                <img src="perkins_generator.jpg" alt="Дизель-генераторная установка Perkins">
+                <h3>Дизель-генераторная установка Perkins</h3>
+                <p>Мощность: от 7 кВт до 360 кВт<br>Компактная конструкция, высокая мощность, экономия топлива.</p>
+                <a href="https://ru.hitepower.com/product-perkins-diesel-electric-power-generator-set.html" class="button" target="_blank">Подробнее</a>
+            </div>
+
+            <div class="catalog-item">
+                <img src="weichai_generator.jpg" alt="Дизель-генераторная установка Weichai">
+                <h3>Дизель-генераторная установка Weichai</h3>
+                <p>Мощность: от 20 кВт до 160 кВт<br>Более 70 лет опыта производства.</p>
+                <a href="https://ru.hitepower.com/product-weichai-diesel-electric-power-generator-set.html" class="button" target="_blank">Подробнее</a>
+            </div>
+        </div>
     </div>
 
     <!-- Кнопка "Показать ещё" -->
     <button id="show-more">Показать ещё</button>
 </section>
 
-<section class="catalog-container" id="diesel-generators">
-    <h2>ДГУ HAITAI Power</h2>
-    <div class="catalog-grid">
-
-        <!-- Генераторная установка Cummins -->
-        <div class="catalog-item">
-            <img src="cummins_generator.jpg" alt="Дизель-генераторная установка Cummins">
-            <h3>Дизель-генераторная установка Cummins</h3>
-            <p>Мощность: от 20 кВт до 1200 кВт<br>Двигатели серий M, N, K с различными конфигурациями цилиндров, обеспечивающие надежную и эффективную работу.</p>
-            <a href="https://ru.hitepower.com/product-cummins-diesel-electric-power-generator-set.html" class="button" target="_blank">Подробнее</a>
-        </div>
-
-        <!-- Генераторная установка Perkins -->
-        <div class="catalog-item">
-            <img src="perkins_generator.jpg" alt="Дизель-генераторная установка Perkins">
-            <h3>Дизель-генераторная установка Perkins</h3>
-            <p>Мощность: от 7 кВт до 360 кВт<br>Компактная конструкция, высокая мощность, экономия топлива и низкие выбросы, идеально подходит для различных применений.</p>
-            <a href="https://ru.hitepower.com/product-perkins-diesel-electric-power-generator-set.html" class="button" target="_blank">Подробнее</a>
-        </div>
-
-        <!-- Генераторная установка Weichai -->
-        <div class="catalog-item">
-            <img src="weichai_generator.jpg" alt="Дизель-генераторная установка Weichai">
-            <h3>Дизель-генераторная установка Weichai</h3>
-            <p>Мощность: от 20 кВт до 160 кВт<br>Более 70 лет опыта производства, компактная конструкция, высокая эффективность и надежность.</p>
-            <a href="https://ru.hitepower.com/product-weichai-diesel-electric-power-generator-set.html" class="button" target="_blank">Подробнее</a>
-        </div>
-
-        <!-- Генераторная установка Doosan -->
-        <div class="catalog-item">
-            <img src="doosan_generator.jpg" alt="Дизель-генераторная установка Doosan">
-            <h3>Дизель-генераторная установка Doosan</h3>
-            <p>Мощность: от 20 кВт до 160 кВт<br>Высокая производительность, соответствие международным стандартам, низкий расход топлива и масла.</p>
-            <a href="https://ru.hitepower.com/product-doosan-electric-power-diesel-generator.html" class="button" target="_blank">Подробнее</a>
-        </div>
-
-    </div>
-</section>
 
 
 
@@ -239,31 +228,32 @@
         });
     });
 
-    // Кнопка "Показать ещё" с анимацией раскрытия
-    document.getElementById("showMoreBtn").addEventListener("click", function() {
-        var hiddenCatalog = document.getElementById("hiddenCatalog");
-        if (!hiddenCatalog.classList.contains("show")) {
-            hiddenCatalog.classList.add("show");
-            this.innerText = "Скрыть";
-        } else {
-            hiddenCatalog.classList.remove("show");
-            setTimeout(() => { hiddenCatalog.style.display = "none"; }, 500);
-            this.innerText = "Показать ещё";
-        }
-    });
+    
 </script>
 <script>
-    document.getElementById("show-more").addEventListener("click", function () {
-        var hiddenDgu = document.getElementById("hidden-dgu");
-        if (hiddenDgu.style.display === "none" || hiddenDgu.style.display === "") {
-            hiddenDgu.style.display = "flex";
-            this.innerText = "Скрыть";
-        } else {
-            hiddenDgu.style.display = "none";
-            this.innerText = "Показать ещё";
-        }
+    document.addEventListener("DOMContentLoaded", function () {
+        var hiddenSection = document.getElementById("hidden-section");
+        var showMoreBtn = document.getElementById("show-more");
+
+        hiddenSection.classList.remove("show"); // Убеждаемся, что скрыт
+
+        showMoreBtn.addEventListener("click", function () {
+            if (hiddenSection.classList.contains("show")) {
+                hiddenSection.classList.remove("show");
+                setTimeout(() => { hiddenSection.style.display = "none"; }, 500);
+                showMoreBtn.innerText = "Показать ещё";
+            } else {
+                hiddenSection.style.display = "block";
+                setTimeout(() => { hiddenSection.classList.add("show"); }, 10);
+                showMoreBtn.innerText = "Скрыть";
+            }
+        });
     });
 </script>
+
+
+
+
 
 
 

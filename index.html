@@ -105,7 +105,7 @@
         </div>
     </section>
 <section class="catalog-container" id="catalog">
-    <h2>ДГУ RICARDO</h2>
+    <h2>ДГУ</h2>
     <div class="catalog-grid">
 
         <!-- Первые 3 ДГУ (они сразу видны) -->
@@ -134,7 +134,7 @@
 
     <!-- Блок со скрытыми ДГУ и HAITAI POWER -->
     <div id="hidden-section" class="hidden">
-        <h2>ДГУ RICARDO (Продолжение)</h2>
+        <p></p>
         <div class="catalog-grid">
             <div class="catalog-item">
                 <img src="ricardo_75kw.jpg" alt="Ricardo 75kW Diesel Generator">
@@ -158,7 +158,7 @@
             </div>
         </div>
 
-        <h2>ДГУ HAITAI POWER</h2>
+        <p></p>
         <div class="catalog-grid">
             <div class="catalog-item">
                 <img src="cummins_generator.jpg" alt="Дизель-генераторная установка Cummins">
@@ -186,6 +186,66 @@
     <!-- Кнопка "Показать ещё" -->
     <button id="show-more">Показать ещё</button>
 </section>
+
+<!-- Секция со спецтехникой -->
+<section class="catalog-container">
+    <h2>Спецтехника</h2>
+    <div class="catalog-grid">
+
+        <!-- Открытые 3 карточки -->
+        <div class="catalog-item">
+            <img src="bulldozer.jpg" alt="Бульдозер">
+            <h3>Бульдозер Shantui SD16</h3>
+            <p>Мощность: 160 л.с., масса: 17 т. Высокая проходимость.</p>
+            <a href="bulldozer_shantui_sd16.html" class="button">Подробнее</a>
+        </div>
+
+        <div class="catalog-item">
+            <img src="excavator.jpg" alt="Экскаватор">
+            <h3>Гусеничный экскаватор XCMG XE215</h3>
+            <p>Масса: 21.5 т, ковш 1 м³, двигатель Cummins.</p>
+            <a href="excavator_xcmg_xe215.html" class="button">Подробнее</a>
+        </div>
+
+        <div class="catalog-item">
+            <img src="crane.jpg" alt="Автокран">
+            <h3>Автокран XCMG QY25K5</h3>
+            <p>Грузоподъемность: 25 тонн, вылет стрелы: 39.5 м.</p>
+            <a href="crane_xcmg_qy25k5.html" class="button">Подробнее</a>
+        </div>
+    </div>
+
+    <!-- Скрытая спецтехника -->
+	<p></p>
+    <div id="hidden-special-equipment" class="hidden">
+        <div class="catalog-grid">
+            <div class="catalog-item">
+                <img src="forklift.jpg" alt="Погрузчик">
+                <h3>Вилочный погрузчик Lonking LG35DT</h3>
+                <p>Грузоподъемность: 3.5 т, высота подъема: 3 м.</p>
+                <a href="forklift_lonking_lg35dt.html" class="button">Подробнее</a>
+            </div>
+
+            <div class="catalog-item">
+                <img src="grader.jpg" alt="Грейдер">
+                <h3>Автогрейдер Shantui SG21A-3</h3>
+                <p>Мощность: 220 л.с., масса: 17 т, ширина отвала: 4 м.</p>
+                <a href="grader_shantui_sg21a3.html" class="button">Подробнее</a>
+            </div>
+
+            <div class="catalog-item">
+                <img src="dumptruck.jpg" alt="Самосвал">
+                <h3>Самосвал HOWO 371</h3>
+                <p>Грузоподъемность: 25 т, объем кузова: 18 м³.</p>
+                <a href="dumptruck_howo_371.html" class="button">Подробнее</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Кнопка "Показать ещё" для спецтехники -->
+    <button id="show-more-equipment">Показать ещё</button>
+</section>
+
 
 
 
@@ -235,21 +295,45 @@
         var hiddenSection = document.getElementById("hidden-section");
         var showMoreBtn = document.getElementById("show-more");
 
-        hiddenSection.classList.remove("show"); // Убеждаемся, что скрыт
+        if (hiddenSection && showMoreBtn) {
+            hiddenSection.classList.remove("show");
 
-        showMoreBtn.addEventListener("click", function () {
-            if (hiddenSection.classList.contains("show")) {
-                hiddenSection.classList.remove("show");
-                setTimeout(() => { hiddenSection.style.display = "none"; }, 500);
-                showMoreBtn.innerText = "Показать ещё";
-            } else {
-                hiddenSection.style.display = "block";
-                setTimeout(() => { hiddenSection.classList.add("show"); }, 10);
-                showMoreBtn.innerText = "Скрыть";
-            }
-        });
+            showMoreBtn.addEventListener("click", function () {
+                if (hiddenSection.classList.contains("show")) {
+                    hiddenSection.classList.remove("show");
+                    setTimeout(() => { hiddenSection.style.display = "none"; }, 500);
+                    showMoreBtn.innerText = "Показать ещё";
+                } else {
+                    hiddenSection.style.display = "block";
+                    setTimeout(() => { hiddenSection.classList.add("show"); }, 10);
+                    showMoreBtn.innerText = "Скрыть";
+                }
+            });
+        }
+
+        // Код для кнопки "Показать ещё" в спецтехнике
+        var hiddenEquipment = document.getElementById("hidden-special-equipment");
+        var showMoreEquipmentBtn = document.getElementById("show-more-equipment");
+
+        if (hiddenEquipment && showMoreEquipmentBtn) {
+            hiddenEquipment.classList.remove("show");
+
+            showMoreEquipmentBtn.addEventListener("click", function () {
+                if (hiddenEquipment.classList.contains("show")) {
+                    hiddenEquipment.classList.remove("show");
+                    setTimeout(() => { hiddenEquipment.style.display = "none"; }, 500);
+                    showMoreEquipmentBtn.innerText = "Показать ещё";
+                } else {
+                    hiddenEquipment.style.display = "block";
+                    setTimeout(() => { hiddenEquipment.classList.add("show"); }, 10);
+                    showMoreEquipmentBtn.innerText = "Скрыть";
+                }
+            });
+        }
     });
 </script>
+
+
 
 
 

@@ -1241,3 +1241,68 @@ a {
     display: inline-block;
     margin-bottom: 10px;
 }
+
+body {
+    font-size: 18px; /* Увеличение общего размера текста */
+}
+
+/* Увеличение текста в заголовках */
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+/* Увеличение текста в навигации */
+.top-bar a {
+    font-size: 20px;
+}
+
+/* Увеличение текста в карточках */
+.card {
+    font-size: 18px;
+}
+
+/* Увеличение кнопок */
+button, .btn {
+    font-size: 18px;
+    padding: 12px 20px;
+}
+
+/* Увеличение описания в каталоге */
+.catalog-description {
+    font-size: 20px;
+}
+
+/* Увеличение текста в блоке закупки редкоземельных металлов */
+.rare-metals-section {
+    font-size: 20px;
+}
+
+body {
+    font-size: 18px; /* Измени размер, если нужно больше или меньше */
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p, li {
+    font-size: 18px;
+}

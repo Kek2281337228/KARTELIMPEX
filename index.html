@@ -32,9 +32,9 @@
 <div class="top-bar">
     
     <ul class="menu">
-        <li><a href="#catalog">Каталог</a></li>
         <li><a href="#about">О компании</a></li>
         <li><a href="#services">Услуги</a></li>
+	<li><a href="#catalog">Каталог</a></li>
         <li><a href="#contacts">Контакты</a></li>
     </ul>
 </div>
@@ -49,15 +49,21 @@
         <img src="logo.png" alt="Kartel Impex Logo" class="logo">
     </header>
 
-    <section class="about">
+    <section class="about" id="about">
         <h2>О КОМПАНИИ</h2>
        
         <p>Комплексное решение для импортных закупок. Мы обеспечиваем полный цикл закупок материалов напрямую от производителей.</p>
-        <img src="company_image.jpg" class="comp" alt="О компании">
+        <div class="company-video">
+    <video autoplay loop muted playsinline>
+        <source src="your-video (2).mp4" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+    </video>
+</div>
+
     </section>
 
-    <section class="services">
-        <h2>ОСНОВНЫЕ НАПРАВЛЕНИЯ ДЕЯТЕЛЬНОСТИ</h2>
+    <section class="services" id="services">
+        <h2>Услуги</h2>
 
         <div class="service">
             <h3>ТАМОЖЕННОЕ ОФОРМЛЕНИЕ</h3>
@@ -68,7 +74,18 @@
                 <li>Заключение договоров</li>
                 <li>Расчет и оплата таможенных платежей</li>
             </ul>
-            <img src="customs.jpg" class="comp" alt="Таможенное оформление">
+            <div class="video-section customs">
+    <div class="video-mirror left"></div>
+    <video class="main-video" id="loopingVideo" autoplay loop muted playsinline>
+        <source src="customs-video.mp4" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+    </video>
+    <div class="video-mirror right"></div>
+</div>
+
+
+
+
         </div>
 
         <div class="service">
@@ -80,7 +97,16 @@
                 <li>Контроль всех этапов доставки</li>
                 <li>Оптимизация логистических процессов</li>
             </ul>
-            <img src="logistics.jpg" class="comp" alt="Транспортная логистика">
+            <div class="video-section logistics">
+    <div class="video-mirror left"></div>
+    <video id="loopingVideo" class="main-video" autoplay loop muted playsinline>
+        <source src="logistics-video.mp4" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+    </video>
+    <div class="video-mirror right"></div>
+</div>
+
+
         </div>
 
         <div class="service">
@@ -91,7 +117,18 @@
                 <li>Взаимодействие с контролирующими органами</li>
                 <li>Подготовка полного пакета документов</li>
             </ul>
-            <img src="documentation.jpg" class="comp" alt="Документационное сопровождение">
+            <div class="video-section customs">
+    <div class="video-mirror left first-mirror"></div>
+    <div class="video-wrapper">
+        <video class="main-video" autoplay loop muted playsinline>
+            <source src="first-video.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+    </div>
+    <div class="video-mirror right"></div>
+</div>
+
+
         </div>
 
         <div class="service">
@@ -101,7 +138,17 @@
                 <li>Выкуп товара за рубежом</li>
                 <li>Работа с иностранной валютой</li>
             </ul>
-            <img src="purchasing.jpg" class="comp" alt="Закупочная деятельность">
+            <div class="video-section logistics">
+    <div class="video-mirror left"></div>
+    <div class="video-wrapper">
+        <video class="main-video" autoplay loop muted playsinline>
+            <source src="second-video.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+    </div>
+    <div class="video-mirror right second-mirror"></div>
+</div>
+
         </div>
     </section>
 <section class="catalog-container" id="catalog">
@@ -332,6 +379,8 @@
         }
     });
 </script>
+
+
 
 
 

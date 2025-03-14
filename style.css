@@ -848,3 +848,294 @@ a {
 .catalog-item .button:hover {
     background-color: #218838;
 }
+
+
+
+
+
+.company-video {
+    width: 100%;
+    max-width: 800px; /* Подстраивай под размер видео */
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Видео с плавной прозрачностью по ВСЕМ граням */
+.company-video video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    
+    /* Маска для плавного исчезновения сверху, снизу и по бокам */
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%);
+    
+    /* Чтобы по бокам тоже была плавная прозрачность */
+    -webkit-mask-composite: destination-in;
+    mask-composite: intersect;
+}
+
+
+
+/* Видео с плавной прозрачностью со всех сторон */
+.company-video video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    
+    /* Маска для прозрачных краев по всем сторонам */
+    -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 100%);
+    mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 100%);
+}
+
+.customs-video {
+    width: 100%;
+    max-width: 800px; /* Настроить размер */
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Видео с плавной прозрачностью по ВСЕМ краям */
+.customs-video video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    
+    /* Маска для плавного исчезновения по бокам, сверху и снизу */
+    -webkit-mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 35%, rgba(0, 0, 0, 0) 100%);
+    mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 35%, rgba(0, 0, 0, 0) 100%);
+}
+
+.customs-video-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Основное видео */
+.customs-video video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.customs-video-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Основное видео */
+.customs-video video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+/* Отражения */
+.video-mirror {
+    position: absolute;
+    top: 0;
+    width: 25%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(15px) opacity(0.5);
+    z-index: 1;
+    animation: moveMirror 10s linear infinite alternate;
+	border-radius: 10px;
+}
+
+/* Левое отражение */
+.video-mirror.left {
+    left: 0;
+    background-image: url('your-video-thumbnail.jpg'); /* Миниатюра видео */
+    transform: scaleX(-1);
+	border-radius: 10px;
+}
+
+/* Правое отражение */
+.video-mirror.right {
+    right: 0;
+    background-image: url('your-video-thumbnail.jpg'); /* Миниатюра видео */
+	border-radius: 10px;
+}
+
+/* Анимация движения отражений */
+@keyframes moveMirror {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* Контейнер для видео с отражениями */
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 400px; /* Размер как в таможенном оформлении */
+    margin: auto;
+    overflow: hidden;
+}
+
+
+}
+
+/* Отражения */
+.video-mirror {
+    position: absolute;
+    top: 0;
+    width: 15%; /* Размер отражений */
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(15px) opacity(0.5);
+    z-index: 1;
+    animation: moveMirror 10s linear infinite alternate;
+}
+
+/* Левое отражение */
+.video-mirror.left {
+    left: 0;
+    background-image: url('your-logistics-thumbnail.jpg'); /* Превью видео */
+    transform: scaleX(-1);
+}
+
+/* Правое отражение */
+.video-mirror.right {
+    right: 0;
+    background-image: url('your-logistics-thumbnail.jpg'); /* Превью видео */
+}
+
+/* Анимация плавного движения отражений */
+@keyframes moveMirror {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* Контейнер для видео с отражениями */
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 400px; /* Размер как в таможенном оформлении */
+    margin: auto;
+    overflow: hidden;
+}
+
+
+}
+
+/* Общие стили для отражений */
+.video-mirror {
+    position: absolute;
+    top: 0;
+    width: 15%; /* Размер отражений */
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(15px) opacity(0.5);
+    z-index: 1;
+    animation: moveMirror 10s linear infinite alternate;
+}
+
+/* Левое отражение */
+.video-mirror.left {
+    left: 0;
+    transform: scaleX(-1);
+}
+
+/* Правое отражение */
+.video-mirror.right {
+    right: 0;
+}
+
+/* Анимация плавного движения отражений */
+@keyframes moveMirror {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* --- Отдельные стили для каждого видео --- */
+
+/* Таможенное оформление */
+.video-section.customs .video-mirror.left {
+    background-image: url('customs-left.jpg');
+}
+.video-section.customs .video-mirror.right {
+    background-image: url('customs-left.jpg');
+}
+
+/* Транспортная логистика */
+.video-section.logistics .video-mirror.left {
+    background-image: url('logistics-left.jpg');
+}
+.video-section.logistics .video-mirror.right {
+    background-image: url('logistics-left.jpg');
+}
+
+/* Основное видео */
+.main-video {
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+    border-radius: 15px; /* Теперь закругления применяются ко ВСЕМ видео */
+}
+
+/* Контейнер для видео */
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 15px; /* Закругления у контейнера */
+}
+
+/* Отражения */
+.video-mirror {
+    position: absolute;
+    top: 0;
+    width: 15%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(15px) opacity(0.5);
+    z-index: 1;
+    animation: moveMirror 10s linear infinite alternate;
+    border-radius: 15px; /* Теперь у отражений тоже закругления */
+}
+
+

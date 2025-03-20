@@ -1475,12 +1475,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .header-overlay {
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
+    
     }
 
     .video-subtitle {
@@ -1509,12 +1504,6 @@ body {
     .company-name {
         font-size: 12px;
         margin-right: 5px;
-    }
-}
-@media screen and (max-width: 768px) {
-    .menu li a {
-        font-size: 12px;
-        padding: 4px 6px;
     }
 }
 

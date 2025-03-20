@@ -11,15 +11,6 @@ body {
 
 /
 
-/* Делаем сайт шире на ПК */
-@media (min-width: 2000px) {
-    .container {
-        max-width: 2000px; /* Увеличенная ширина на компьютерах */
-    }
-    section {
-        max-width: 1500px; /* Контент тоже шире */
-    }
-}
 
 
 }
@@ -555,30 +546,7 @@ a {
     border-radius: 5px;
 }
 
-/* 📱 Адаптив для планшетов (768px) */
-@media screen and (max-width: 768px) {
-    .top-bar {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-
-    .top-bar .logo {
-        font-size: 18px;
-        margin-bottom: 8px;
-    }
-
-    .top-bar .menu {
-        flex-wrap: wrap; /* Пункты меню переносятся, но остаются горизонтально */
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .top-bar .menu a {
-        font-size: 14px;
-        padding: 6px 10px;
-    }
-}
+\
 
 
 /* 🔹 Логотип (уменьшенный размер) */
@@ -978,13 +946,6 @@ a {
     right: 0;
 }
 
-/* Анимация плавного движения отражений */
-@keyframes moveMirror {
-    0% { background-position: 0% 50%; }
-    100% { background-position: 100% 50%; }
-}
-
-/* --- Отдельные стили для каждого видео --- */
 
 
 }
@@ -1469,30 +1430,33 @@ body {
 
 @media screen and (max-width: 768px) {
     .top-bar {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-
-    .top-logo {
-        height: 30px; /* Еще меньше логотип */
-        margin-right: 0;
-    }
-
-    .company-name {
-        font-size: 14px;
-        margin: 5px 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5px;
     }
 
     .menu {
-        flex-direction: column;
-        gap: 10px;
-        margin-right: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin: 5px 0;
+        justify-content: center;
     }
 
     .menu li a {
-        font-size: 14px;
-        padding: 6px 10px;
+        font-size: 12px;
+        padding: 4px 6px;
+    }
+
+    .top-logo {
+        height: 25px;
+        margin-right: 10px;
+    }
+
+    .company-name {
+        font-size: 12px;
+        margin-right: 5px;
     }
 }
 
@@ -1511,28 +1475,34 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    .header-overlay {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .video-subtitle {
+        top: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .services-grid {
         grid-template-columns: 1fr;
+        gap: 10px;
+        margin: 20px auto;
     }
 
     .service-card {
-        height: 200px;
+        height: auto;
+        min-height: 200px;
     }
-}
 
-@media screen and (max-width: 768px) {
     .catalog-item {
-        width: 90%;
-        margin: 0 auto;
+        width: 95%;
+        margin: 10px auto;
     }
 }
 
-@media screen and (max-width: 768px) {
-    .video-section {
-        height: 300px;
-    }
-
-    .main-video {
-        width: 90%;
-    }
-}

@@ -1524,23 +1524,7 @@ body {
         padding: 4px 6px;
     }
 }
-@media screen and (max-width: 768px) {
-    .service-text h3 {
-        font-size: 16px;
-    }
 
-    .service-text p {
-        font-size: 12px;
-    }
-
-    .catalog-item h3 {
-        font-size: 14px;
-    }
-
-    .catalog-item p {
-        font-size: 12px;
-    }
-}
 
 @media screen and (max-width: 768px) {
     body {

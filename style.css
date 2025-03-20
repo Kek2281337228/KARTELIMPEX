@@ -1474,14 +1474,7 @@ body {
     }
 }
 
-@media screen and (max-width: 768px) {
-    
-    }
 
-    .video-subtitle {
-        top: 60%;
-    }
-}
 
 @media screen and (max-width: 768px) {
     .services-grid {

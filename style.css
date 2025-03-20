@@ -1541,3 +1541,37 @@ body {
         font-size: 12px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p, li, a, button {
+        font-size: 12px;
+    }
+
+    .service-text h3,
+    .service-text p,
+    .catalog-item h3,
+    .catalog-item p,
+    .contacts p {
+        font-size: 12px;
+    }
+
+    .video-subtitle {
+        font-size: 12px;
+    }
+}

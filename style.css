@@ -17,12 +17,12 @@ body {
 }
 
 /* Делаем сайт шире на ПК */
-@media (min-width: 1024px) {
+@media (min-width: 2000px) {
     .container {
-        max-width: 1200px; /* Увеличенная ширина на компьютерах */
+        max-width: 2000px; /* Увеличенная ширина на компьютерах */
     }
     section {
-        max-width: 1100px; /* Контент тоже шире */
+        max-width: 1500px; /* Контент тоже шире */
     }
 }
 
@@ -37,7 +37,7 @@ body {
 
 /* Заголовки с прозрачным фоном и новым шрифтом */
 h1 {
-    font-size: 100px;
+    font-size: 1000px;
     font-weight: 2000;
     color: white;
     background-color: ; /* Полупрозрачный голубой */
@@ -48,7 +48,7 @@ h1 {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 36px;
     font-weight: 600;
     color: white;
     background-color: rgba(90, 155, 230, 0.7); /* Полупрозрачный светло-голубой */
@@ -59,7 +59,7 @@ h2 {
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 200px;
     font-weight: 600;
     color: black;
     background-color: rgba(244, 200, 66, 0.7); /* Полупрозрачный золотистый */
@@ -78,7 +78,7 @@ section {
 
 /* Блоки услуг и преимуществ */
 .service, .advantage {
-    background-color: rgba(30, 30, 30, 0.8); /* Темно-серый с прозрачностью */
+    
     padding: 15px;
     margin: 10px auto;
     border-radius: 6px;
@@ -95,9 +95,9 @@ img {
 }
 
 /* Увеличение картинок на ПК */
-@media (min-width: 1024px) {
+@media (min-width: 2000px) {
     img {
-        max-width: 800px; /* Картинки шире на больших экранах */
+        max-width: 2000px; /* Картинки шире на больших экранах */
     }
 }
 
@@ -110,7 +110,7 @@ ul {
 
 li {
     margin-bottom: 6px; /* Отступ между пунктами списка */
-    font-size: 16px; /* Размер текста */
+    font-size: 160px; /* Размер текста */
     font-weight: 400;
 }
 
@@ -131,7 +131,7 @@ footer {
         max-width: 1500px; /* Увеличенная ширина на компьютерах */
     }
     section {
-        max-width: 1300px; /* Контент тоже шире */
+        max-width: 1800px; /* Контент тоже шире */
     }
 }
 
@@ -178,7 +178,7 @@ html {
 /* Заголовок */
 .catalog-container h2 {
     text-align: center;
-    font-size: 26px;
+    font-size: 260px;
     font-weight: bold;
     color: #white;
     margin-bottom: 20px;
@@ -886,7 +886,7 @@ a {
     border-radius: 10px;
     
     /* Маска для плавного исчезновения по бокам, сверху и снизу */
-    -webkit-mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 35%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 35%,  rgba(0, 0, 0, 0) 100%);
     mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 35%, rgba(0, 0, 0, 0) 100%);
 }
 
@@ -904,7 +904,7 @@ a {
 /* Основное видео */
 .customs-video video {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     border-radius: 10px;
     z-index: 2;
@@ -930,39 +930,13 @@ a {
     z-index: 2;
 }
 
-/* Отражения */
-.video-mirror {
-    position: absolute;
-    top: 0;
-    width: 25%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    filter: blur(15px) opacity(0.5);
-    z-index: 1;
-    animation: moveMirror 10s linear infinite alternate;
-	border-radius: 10px;
+
+
+
+
 }
 
-/* Левое отражение */
-.video-mirror.left {
-    left: 0;
-    background-image: url('your-video-thumbnail.jpg'); /* Миниатюра видео */
-    transform: scaleX(-1);
-	border-radius: 10px;
-}
 
-/* Правое отражение */
-.video-mirror.right {
-    right: 0;
-    background-image: url('your-video-thumbnail.jpg'); /* Миниатюра видео */
-	border-radius: 10px;
-}
-
-/* Анимация движения отражений */
-@keyframes moveMirror {
-    0% { background-position: 0% 50%; }
-    100% { background-position: 100% 50%; }
 }
 
 /* Контейнер для видео с отражениями */
@@ -972,7 +946,7 @@ a {
     align-items: center;
     position: relative;
     width: 100%;
-    height: 400px; /* Размер как в таможенном оформлении */
+    height: 800px; /* Размер как в таможенном оформлении */
     margin: auto;
     overflow: hidden;
 }
@@ -980,31 +954,10 @@ a {
 
 }
 
-/* Отражения */
-.video-mirror {
-    position: absolute;
-    top: 0;
-    width: 15%; /* Размер отражений */
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    filter: blur(15px) opacity(0.5);
-    z-index: 1;
-    animation: moveMirror 10s linear infinite alternate;
-}
 
-/* Левое отражение */
-.video-mirror.left {
-    left: 0;
-    background-image: url('your-logistics-thumbnail.jpg'); /* Превью видео */
-    transform: scaleX(-1);
-}
 
-/* Правое отражение */
-.video-mirror.right {
-    right: 0;
-    background-image: url('your-logistics-thumbnail.jpg'); /* Превью видео */
-}
+
+
 
 /* Анимация плавного движения отражений */
 @keyframes moveMirror {
@@ -1059,20 +1012,7 @@ a {
 
 /* --- Отдельные стили для каждого видео --- */
 
-/* Таможенное оформление */
-.video-section.customs .video-mirror.left {
-    background-image: url('customs-left.jpg');
-}
-.video-section.customs .video-mirror.right {
-    background-image: url('customs-left.jpg');
-}
 
-/* Транспортная логистика */
-.video-section.logistics .video-mirror.left {
-    background-image: url('logistics-left.jpg');
-}
-.video-section.logistics .video-mirror.right {
-    background-image: url('logistics-left.jpg');
 }
 
 /* Основное видео */
@@ -1091,32 +1031,21 @@ a {
     align-items: center;
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 600px;
     margin: auto;
     overflow: hidden;
     border-radius: 15px; /* Закругления у контейнера */
 }
 
-/* Отражения */
-.video-mirror {
-    position: absolute;
-    top: 0;
-    width: 15%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    filter: blur(15px) opacity(0.5);
-    z-index: 1;
-    animation: moveMirror 10s linear infinite alternate;
-    border-radius: 15px; /* Теперь у отражений тоже закругления */
+
 }
 
 /* Раздел закупки редкоземельных металлов */
 .catalog-section {
     text-align: center;
     padding: 40px;
-    background: #ffffff; /* Делаем фон белым */
-    color: #333; /* Делаем текст тёмным */
+    
+    
 }
 
 /* Большая карточка */
@@ -1162,7 +1091,7 @@ a {
 .metal-wrapper {
     width: 960px; /* Ширина блока под три карточки */
     max-width: 100%;
-    background: #fff;
+    
     border-radius: 20px; /* Закругления */
     padding: 30px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -1199,7 +1128,7 @@ a {
 .metal-info {
     text-align: center;
     font-size: 18px;
-    color: #333;
+    
     line-height: 1.4;
     margin-bottom: 15px;
 }
@@ -1226,12 +1155,12 @@ h1 {
 }
 
 h2 {
-    font-size: 28px;
+    font-size: 36px;
     font-weight: bold;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 36px;
 }
 
 /* Увеличение текста в навигации */
@@ -1261,11 +1190,11 @@ button, .btn {
 }
 
 body {
-    font-size: 18px; /* Измени размер, если нужно больше или меньше */
+    font-size: 20px; /* Измени размер, если нужно больше или меньше */
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 20px;
 }
 
 h2 {
@@ -1273,11 +1202,11 @@ h2 {
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 30px;
 }
 
 p, li {
-    font-size: 18px;
+    font-size: 25px;
 }
 #translateBtn {
     position: fixed;
@@ -1399,4 +1328,167 @@ body {
     color: white;
     font-size: 15px;
     text-decoration: none;
+}
+
+/* Контейнер каталога */
+.catalog-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Заголовок */
+.catalog-container h2 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+
+/* Грид для каталога */
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/* Карточка продукции */
+.catalog-item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    min-width: 300px;
+    max-width: 350px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Заголовок карточки */
+.catalog-item h3 {
+    background: #F2C94C;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+}
+
+/* Кнопка */
+.catalog-item .button {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.catalog-item .button:hover {
+    background: #218838;
+}
+
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 50px auto;
+  max-width: 1200px;
+}
+
+.service-card {
+  position: relative;
+  height: 250px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+}
+
+.service-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  color: white;
+  width: 100%;
+}
+
+.service-overlay h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.service-overlay p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 50px auto;
+  max-width: 1200px;
+}
+
+.service-card {
+  position: relative;
+  height: 250px;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+.service-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.service-overlay {
+  position: relative;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  color: white;
+  width: 100%;
+  z-index: 2;
+}
+
+.service-overlay h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.service-overlay p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.main-video {
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+    border-radius: 15px;
+
+    /* Плавная прозрачность по бокам */
+    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%);
+    mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%);
 }

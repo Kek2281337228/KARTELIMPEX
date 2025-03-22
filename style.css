@@ -1577,58 +1577,8 @@ body {
 }
 
 
-@media screen and (min-width: 1024px) {
-    .top-bar {
-        padding: 10px 30px;
-        justify-content: space-between;
-    }
 
-    .menu li a {
-        font-size: 16px;
-        padding: 10px 12px;
-    }
-
-    .top-logo {
-        height: 35px;
-        margin-right: 15px;
-    }
-
-    .company-name {
-        font-size: 20px;
-        margin-right: 10px;
-    }
 }
 
 
 
-@media screen and (min-width: 1024px) {
-    .catalog-container, 
-    .services-grid, 
-    .metal-wrapper, 
-    .contacts, 
-    .advantages, 
-    .section {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    .service-card {
-        height: 300px;
-    }
-
-    
-    
-    }
-
-    .video-subtitle {
-        font-size: 22px;
-    }
-}
-
-
-    }
-}
-
-
-
-@

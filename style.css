@@ -1580,5 +1580,97 @@ body {
 
 }
 
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 18px;
+        max-width: 1920px;
+        margin: 0 auto;
+    }
 
+    .top-bar {
+        max-width: 1800px;
+        margin: 0 auto;
+        padding: 10px 20px;
+    }
+
+    .menu {
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+
+    .top-logo {
+        height: 50px;
+    }
+
+    .company-name {
+        font-size: 20px;
+    }
+
+    .header-video {
+        height: 800px;
+    }
+
+    .header-overlay h1 {
+        font-size: 60px;
+    }
+
+    .video-subtitle {
+        font-size: 22px;
+    }
+
+    .catalog-container,
+    .services-grid,
+    .advantages,
+    .contacts {
+        max-width: 1600px;
+        margin: 0 auto;
+        padding: 30px;
+    }
+
+    .catalog-item {
+        width: calc(25% - 20px);
+        max-width: 350px;
+    }
+
+    .service-card {
+        height: 300px;
+    }
+
+    .main-video {
+        max-width: 1000px;
+    }
+
+    .metal-wrapper {
+        width: 1400px;
+    }
+}
+
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Меню справа */
+    padding: 10px 40px;
+    background-color: rgba(0, 0, 0, 0.95);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo-name-container {
+    display: flex;
+    align-items: center;
+}
+
+.top-logo {
+    height: 50px;
+    margin-right: 1000px;
+}
+
+.company-name {
+    font-size: 20px;
+    color: white;
+}
 

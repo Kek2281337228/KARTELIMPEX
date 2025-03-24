@@ -1763,7 +1763,7 @@ body {
 
 @media (max-width: 768px) {
   .header-text h1 {
-    font-size: 12px; /* уменьшили для мобилки */
+    font-size: 16px; /* уменьшили для мобилки */
 
   .header-text p {
     font-size: 1em;

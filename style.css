@@ -1749,5 +1749,8 @@ body {
         width: 100%;
         height: auto;
     }
+    .video-subtitle {
+	height: auto;
+    }
 }
 

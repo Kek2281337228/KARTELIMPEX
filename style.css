@@ -1760,3 +1760,15 @@ body {
   align-items: center;
   
 }
+
+@media (max-width: 768px) {
+  .header-text h1 {
+    font-size: 2.5em; /* уменьшили для мобилки */
+  }
+
+  .header-text p {
+    font-size: 1em;
+    text-align: center;
+    padding: 0 10px; /* чтобы текст не упирался в края */
+  }
+}

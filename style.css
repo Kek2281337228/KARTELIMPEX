@@ -1771,3 +1771,9 @@ body {
     
   }
 }
+@media (max-width: 768px) {
+  .header-text p {
+    max-width: 300px;
+    
+  }
+}

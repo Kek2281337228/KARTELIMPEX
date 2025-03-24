@@ -1502,7 +1502,7 @@ body {
 
 @media screen and (max-width: 768px) {
     .menu li a {
-        font-size: 12px;
+        font-size: 10px;
         padding: 4px 6px;
     }
 }
@@ -1688,4 +1688,66 @@ body {
   margin-top: 10px;
 }
 
+/* Упрощаем топ-бар для мобильных */
+@media screen and (max-width: 768px) {
+    .top-bar {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px 10px;
+    }
+
+    .top-logo {
+        height: 30px;
+        margin-right: 5px;
+    }
+
+    .company-name {
+        font-size: 14px;
+        margin-right: 5px;
+    }
+
+    .menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu li a {
+        font-size: 12px;
+        padding: 4px 6px;
+    }
+}
+
+/* Для заголовков и текста — уменьшение */
+@media screen and (max-width: 768px) {
+    h1, h2, h3 {
+        font-size: 18px;
+    }
+    
+    p, li, a, button {
+        font-size: 12px;
+    }
+}
+
+/* Видео и блоки услуг */
+@media screen and (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .service-card {
+        height: auto;
+        min-height: 200px;
+    }
+    .catalog-item {
+        width: 95%;
+    }
+    .main-video {
+        width: 100%;
+        height: auto;
+    }
+}
 

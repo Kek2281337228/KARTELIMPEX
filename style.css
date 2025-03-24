@@ -1767,8 +1767,7 @@ body {
   }
 
   .header-text p {
-    font-size: 1em;
-    text-align: center;
+    
     padding: 0 10px; /* чтобы текст не упирался в края */
   }
 }

@@ -1762,9 +1762,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .header-text h1 {
-    font-size: 2.5em; /* уменьшили для мобилки */
-  }
+  
 
   .header-text p {
     font-size: 1em;

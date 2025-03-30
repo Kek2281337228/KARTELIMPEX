@@ -1,283 +1,343 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	
-
-     <meta name="description" content="Kartel Impex - комплексное решение для импортных закупок, логистики и юридического сопровождения.">
-     <meta name="keywords" content="Kartel Impex, логистика, таможенное оформление, закупки, импорт, доставка, картель импекс">
-     <meta name="robots" content="index, follow">
-     <meta name="author" content="Kartel Impex">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kartel Impex</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="description" content="Kartel Impex - комплексное решение для импортных закупок, логистики и юридического сопровождения.">
+  <meta name="keywords" content="Kartel Impex, логистика, таможенное оформление, закупки, импорт, доставка, картель импекс">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Kartel Impex">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kartel Impex</title>
+  <!-- Подключаем обновлённый стиль -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="header-video">
-    <video autoplay loop muted playsinline>
-        <source src="your-video.mp4" type="video/mp4">
-        Ваш браузер не поддерживает видео.
-    </video>
-    	<div class="header-overlay">
-	<div class="header-text">
-        <h1>KARTEL IMPEX</h1>	
-	<p> </p>
-	<p>Комплексные услуги по импорту, экспорту и обеспечению безопасности</p>
+  <!-- ШАПКА (header) -->
+  <header>
+    <div class="header-left-group">
+      <!-- ЛОГОТИП МАЛЕНЬКОГО РАЗМЕРА -->
+      <img src="logo.png" alt="KARTEL IMPEX" class="logo" />
+      <!-- НАЗВАНИЕ КОМПАНИИ -->
+      <span class="company-name">KARTEL IMPEX</span>
     </div>
-</div>
-</div>
-<div class="video-subtitle">
-    </div>
-	<div class="video-background">
-    <video autoplay loop muted playsinline>
-        <source src="https://cdn.videvo.net/videvo_files/video/free/2019-03/large_watermarked/181011_06_Australia_4k_012_preview.mp4" type="video/mp4">
-    </video>
-</div>
-
-
-
-
-        
-<div class="top-bar">
-<span class="company-name">KARTEL IMPEX</span>
-<img src="logo.png" alt="KARTEL IMPEX" class="top-logo">
-
-
-    <div class="logo-and-name">
-        
-        
-    </div>
-    <ul class="menu">
+    <!-- МЕНЮ (справа) -->
+    <nav>
+      <ul>
         <li><a href="#about">О компании</a></li>
         <li><a href="#services">Услуги</a></li>
         <li><a href="#contacts">Контакты</a></li>
-	
+      </ul>
+    </nav>
+  </header>
 
-    </ul>
-</div>
-
-
-    
-
-    <section class="about" id="about">
-        <h2>О КОМПАНИИ</h2>
-       
-        <p>Комплексное решение для импортных закупок. Мы обеспечиваем полный цикл закупок материалов напрямую от производителей.</p>
-        <div class="company-video">
-    <video autoplay loop muted playsinline>
-        <source src="your-video (2).mp4" type="video/mp4">
+  <!-- ОСНОВНОЙ КОНТЕНТ -->
+  <main>
+    <!-- Блок с видео, вынесен из <header> -->
+    <div class="section-video">
+      <video autoplay loop muted playsinline>
+        <source src="first-video.mp4" type="video/mp4">
         Ваш браузер не поддерживает видео.
-    </video>
-</div>
+      </video>
+      <div class="video-overlay">
+        <div class="header-text">
+          <h1>KARTEL IMPEX</h1>
+          <p>Комплексные услуги по импорту, экспорту и обеспечению безопасности</p>
+        </div>
+      </div>
+    </div>
 
+    <!-- Ещё один фон-видео, если нужно -->
+    <div class="video-subtitle"></div>
+    <div class="video-background">
+      <video autoplay loop muted playsinline>
+        <!-- <source src="https://cdn.videvo.net/videvo_files/video/free/2019-03/large_watermarked/181011_06_Australia_4k_012_preview.mp4" type="video/mp4"> -->
+        Ваш браузер не поддерживает видео.
+      </video>
+    </div>
+
+    <!-- О КОМПАНИИ -->
+    <section class="about" id="about">
+      <h2>О КОМПАНИИ</h2>
+      <p>Комплексное решение для импортных закупок. Мы обеспечиваем полный цикл закупок материалов напрямую от производителей.</p>
+      <div class="company-video">
+        <video autoplay loop muted playsinline>
+          <source src="your-video (2).mp4" type="video/mp4">
+          Ваш браузер не поддерживает видео.
+        </video>
+      </div>
     </section>
 
+    <!-- УСЛУГИ -->
     <section class="services" id="services">
-        <h2>Услуги</h2>
-
-        <div class="service">
-            <h3>ТАМОЖЕННОЕ ОФОРМЛЕНИЕ</h3>
-            <ul>
-                <li>Подготовка и заполнение деклараций</li>
-                <li>Получение сертификатов соответствия</li>
-                <li>Ответственное хранение при таможенном оформлении</li>
-                <li>Заключение договоров</li>
-                <li>Расчет и оплата таможенных платежей</li>
-            </ul>
-            <div class="video-container">
-
-    <video class="main-video" id="loopingVideo" class="video-container" autoplay loop muted playsinline>
-        <source src="customs-video.mp4" type="video/mp4">
-        Ваш браузер не поддерживает видео.
+      <h2>Услуги</h2>
+      <!-- 1: Таможенное оформление -->
+    <div class="info-block">
+    <div class="info-video">
+    <video autoplay loop muted playsinline>
+      <source src="customs-video.mp4" type="video/mp4">
+      Ваш браузер не поддерживает видео.
     </video>
-</div>
-
-
-
-
-        </div>
-
-        <div class="service">
-            <h3>ТРАНСПОРТНАЯ ЛОГИСТИКА</h3>
-            <ul>
-                <li>Планирование маршрутов доставки</li>
-                <li>Организация погрузочно-разгрузочных работ</li>
-                <li>Мультимодальные перевозки</li>
-                <li>Контроль всех этапов доставки</li>
-                <li>Оптимизация логистических процессов</li>
-            </ul>
-            <div class="video-container">
-   
-    <video id="loopingVideo" class="main-video" class="video-container" autoplay loop muted playsinline>
+    </div>
+    <div class="info-content">
+    <h3>ТАМОЖЕННОЕ ОФОРМЛЕНИЕ</h3>
+    <ul class="mineral-list">
+      <li>
+        <svg viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="6" />
+          <circle cx="12" cy="12" r="9" />
+        </svg>
+        <span>Подготовка и заполнение деклараций</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24">
+          <polygon points="12,2 22,8 22,16 12,22 2,16 2,8" />
+        </svg>
+        <span>Получение сертификатов соответствия</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24">
+          <path d="M3 12L8 2L16 4L21 12L16 20L8 22L3 12Z" />
+        </svg>
+        <span>Ответственное хранение при таможенном оформлении</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24">
+          <path d="M12 2L15 8L12 22L9 8L12 2Z" />
+        </svg>
+        <span>Заключение договоров</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="6" />
+        </svg>
+        <span>Расчет и оплата таможенных платежей</span>
+      </li>
+    </ul>
+    </div>
+    </div>
+      <!-- 2: Транспортная логистика -->
+    <div class="info-block reverse">
+    <div class="info-video">
+    <video autoplay loop muted playsinline>
         <source src="logistics-video.mp4" type="video/mp4">
         Ваш браузер не поддерживает видео.
     </video>
-   
-</div>
-
-
-        </div>
-
-        <div class="service">
-            <h3>ЮРИДИЧЕСКОЕ СОПРОВОЖДЕНИЕ</h3>
-            <ul>
-                <li>Обработка сопроводительных документов</li>
-                <li>Сертификация продукции</li>
-                <li>Взаимодействие с контролирующими органами</li>
-                <li>Подготовка полного пакета документов</li>
-            </ul>
-            <div class="video-container">
-    
-    
-         <video id="loopingVideo" class="main-video" class="video-container" autoplay loop muted playsinline>
-            <source src="first-video.mp4" type="video/mp4">
-            Ваш браузер не поддерживает видео.
-        </video>
     </div>
-    
-</div>
-
-
-        </div>
-
-        <div class="service">
-            <h3>ЗАКУПОЧНАЯ ДЕЯТЕЛЬНОСТЬ</h3>
-            <ul>
-                <li>Приобретение товаров c заводов и фабрик</li>
-                <li>Выкуп товара за рубежом</li>
-                <li>Работа с иностранной валютой</li>
-            </ul>
-            <div class="video-container">
-    
-         <video id="loopingVideo" class="main-video" class="video-container" autoplay loop muted playsinline>
-            <source src="second-video.mp4" type="video/mp4">
-            Ваш браузер не поддерживает видео.
-        </video>
+    <div class="info-content">
+    <h3>ТРАНСПОРТНАЯ ЛОГИСТИКА</h3>
+    <ul class="mineral-list">
+        <li>
+        <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="6" />
+            <circle cx="12" cy="12" r="9" />
+        </svg>
+        <span>Планирование маршрутов доставки</span>
+        </li>
+        <li>
+        <svg viewBox="0 0 24 24">
+            <polygon points="12,2 22,8 22,16 12,22 2,16 2,8" />
+        </svg>
+        <span>Организация погрузочно-разгрузочных работ</span>
+        </li>
+        <li>
+        <svg viewBox="0 0 24 24">
+            <path d="M3 12L8 2L16 4L21 12L16 20L8 22L3 12Z" />
+        </svg>
+        <span>Мультимодальные перевозки</span>
+        </li>
+        <li>
+        <svg viewBox="0 0 24 24">
+            <path d="M12 2L15 8L12 22L9 8L12 2Z" />
+        </svg>
+        <span>Контроль всех этапов доставки</span>
+        </li>
+        <li>
+        <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="6" />
+        </svg>
+        <span>Оптимизация логистических процессов</span>
+        </li>
+    </ul>
     </div>
-    
-</div>
-
-        </div>
-    </section>
-</section>
-
-
-
-
-<div class="metal-container">
-    <div class="metal-wrapper">
+    </div>
+      <!-- 3: Юридическое сопровождение -->
+    <div class="info-block">
+    <div class="info-video">
+    <video autoplay loop muted playsinline>
+        <source src="first-video.mp4" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+    </video>
+    </div>
+    <div class="info-content">
+    <h3>ЮРИДИЧЕСКОЕ СОПРОВОЖДЕНИЕ</h3>
+    <ul class="mineral-list">
+        <li>
+        <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="6" />
+            <circle cx="12" cy="12" r="9" />
+        </svg>
+        <span>Обработка сопроводительных документов</span>
+        </li>
+        <li>
+        <svg viewBox="0 0 24 24">
+            <polygon points="12,2 22,8 22,16 12,22 2,16 2,8" />
+        </svg>
+        <span>Сертификация продукции</span>
+        </li>
+        <li>
+        <svg viewBox="0 0 24 24">
+            <path d="M3 12L8 2L16 4L21 12L16 20L8 22L3 12Z" />
+        </svg>
+        <span>Взаимодействие с контролирующими органами</span>
+        </li>
+        <li>
+        <svg viewBox="0 0 24 24">
+            <path d="M12 2L15 8L12 22L9 8L12 2Z" />
+        </svg>
+        <span>Подготовка полного пакета документов</span>
+        </li>
+    </ul>
+    </div>
+    </div>
+      <!-- 4: Закупочная деятельность -->
+    <div class="info-block reverse">
+    <div class="info-video">
+    <video autoplay loop muted playsinline>
+        <source src="second-video.mp4" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+    </video>
+    </div>
+    <div class="info-content">
+    <h3>ЗАКУПОЧНАЯ ДЕЯТЕЛЬНОСТЬ</h3>
+    <ul class="mineral-list">
+        <li>
+        <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="6" />
+            <circle cx="12" cy="12" r="9" />
+        </svg>
+        <span>Приобретение товаров c заводов и фабрик</span>
+        </li>
+        <li>
+        <svg viewBox="0 0 24 24">
+            <polygon points="12,2 22,8 22,16 12,22 2,16 2,8" />
+        </svg>
+        <span>Выкуп товара за рубежом</span>
+        </li>
+        <li>
+        <svg viewBox="0 0 24 24">
+            <path d="M3 12L8 2L16 4L21 12L16 20L8 22L3 12Z" />
+        </svg>
+        <span>Работа с иностранной валютой</span>
+        </li>
+    </ul>
+    </div>
+    </div>
+    <!-- РЕДКОЗЕМЕЛЬНЫЕ МЕТАЛЛЫ -->
+    <section class="metal-container">
+      <div class="metal-wrapper">
         <h2 class="metal-title">РЕДКОЗЕМЕЛЬНЫЕ МЕТАЛЛЫ</h2>
         <p class="metal-info">
-            Мы предлагаем поставку редкоземельных металлов по индивидуальному запросу.
+          Мы предлагаем поставку редкоземельных металлов по индивидуальному запросу.
         </p>
         <div class="metal-image-wrapper">
-            <img src="rare-metals.jpg" alt="Редкоземельные металлы" class="metal-image">
+          <img src="rare-metals.jpg" alt="Редкоземельные металлы" class="metal-image">
         </div>
         <div class="metal-info">
-            <div class="metal-highlight">ШИРОКИЙ ВЫБОР РЕДКОЗЕМЕЛЬНЫХ МЕТАЛЛОВ</div>
-		<p></p>
-	<p class="metal-info">
+          <div class="metal-highlight">ШИРОКИЙ ВЫБОР РЕДКОЗЕМЕЛЬНЫХ МЕТАЛЛОВ</div>
+          <p>
             Доступны такие металлы, как Неодим, Европий, Тербий, Диспрозий и другие. Свяжитесь с нами для уточнения условий поставки.
-	</p>
+          </p>
         </div>
-    </div>
-</div>
-</div>
-</section>
-</div>
-
-
-
-
-
-
-
-    <section class="advantages" class="section">
-        <h2>НАШИ ПРЕИМУЩЕСТВА</h2>
-        <div class="advantage">01 - Разработка оптимальных маршрутов</div>
-        <div class="advantage">02 - Формирование бесперебойной логистической цепочки</div>
-        <div class="advantage">03 - Полное юридическое сопровождение</div>
-	<div class="advantage">04 - Предоставление услуг в сфере VIP безопасности</div>
+      </div>
     </section>
 
-    <section class="contacts" class="section">
-	<section id="contacts">
-        <h2>КОНТАКТЫ</h2>
-        <p>📩 Email: <a href="mailto:kartel_impex@mail.ru">kartel_impex@mail.ru</a></p>
-        <p>📞 Telegram: <a href="https://t.me/KARTEL_IMPEX">@kartelimpex</a></p>
-        <p>📱 WhatsApp: <a href="https://wa.me/+79180628312">Написать в техническую поддержку</a></p>
-	<p>📞 Генеральный директор ООО "KARTEL IMPEX" Шендаров Денис Владленович: <a href="tel:+79870622406">+7(987)-062-24-06</a><a href="tel:+79279478949"> | +7(927)947-89-49</a></p>
+    <!-- ПРЕИМУЩЕСТВА -->
+    <section class="advantages section">
+      <h2>НАШИ ПРЕИМУЩЕСТВА</h2>
+      <div class="advantage">01 - Разработка оптимальных маршрутов</div>
+      <div class="advantage">02 - Формирование бесперебойной логистической цепочки</div>
+      <div class="advantage">03 - Полное юридическое сопровождение</div>
+      <div class="advantage">04 - Предоставление услуг в сфере VIP безопасности</div>
     </section>
 
-    <footer>
-        <p>Мы обеспечиваем полный цикл логистических и закупочных операций с прозрачностью на каждом этапе.</p>
-    </footer>
-<script>
+    <!-- КОНТАКТЫ -->
+    <section class="contacts section" id="contacts">
+      <h2>КОНТАКТЫ</h2>
+      <p>📩 Email: <a href="mailto:kartel_impex@mail.ru">kartel_impex@mail.ru</a></p>
+      <p>📞 Telegram: <a href="https://t.me/KARTEL_IMPEX">@kartelimpex</a></p>
+      <p>📱 WhatsApp: <a href="https://wa.me/+79180628312">Написать в техподдержку</a></p>
+      <p>
+        📞 Генеральный директор ООО «KARTEL IMPEX» Шендаров Денис Владленович:
+        <a href="tel:+79870622406">+7(987)-062-24-06</a> 
+        <a href="tel:+79279478949">| +7(927)947-89-49</a>
+      </p>
+    </section>
+  </main>
+
+  <!-- ПОДВАЛ (footer) -->
+  <footer>
+    <p>Мы обеспечиваем полный цикл логистических и закупочных операций с прозрачностью на каждом этапе.</p>
+  </footer>
+
+  <!-- СКРИПТЫ -->
+  <script>
     // Плавное появление каталога при прокрутке
-    document.addEventListener("DOMContentLoaded", function() {
-        const catalogContainers = document.querySelectorAll('.catalog-container');
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("show");
-                }
-            });
-        }, { threshold: 0.2 });
-
-        catalogContainers.forEach(container => {
-            observer.observe(container);
+    document.addEventListener('DOMContentLoaded', function() {
+      const catalogContainers = document.querySelectorAll('.catalog-container');
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+          }
         });
+      }, { threshold: 0.2 });
+
+      catalogContainers.forEach(container => {
+        observer.observe(container);
+      });
     });
+  </script>
 
-    
-</script>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        var hiddenSection = document.getElementById("hidden-section");
-        var showMoreBtn = document.getElementById("show-more");
+  <script>
+    // Показ/скрытие секций
+    document.addEventListener('DOMContentLoaded', function () {
+      var hiddenSection = document.getElementById('hidden-section');
+      var showMoreBtn = document.getElementById('show-more');
 
-        if (hiddenSection && showMoreBtn) {
-            hiddenSection.classList.remove("show");
+      if (hiddenSection && showMoreBtn) {
+        hiddenSection.classList.remove('show');
+        showMoreBtn.addEventListener('click', function () {
+          if (hiddenSection.classList.contains('show')) {
+            hiddenSection.classList.remove('show');
+            setTimeout(() => { hiddenSection.style.display = 'none'; }, 500);
+            showMoreBtn.innerText = 'Показать ещё';
+          } else {
+            hiddenSection.style.display = 'block';
+            setTimeout(() => { hiddenSection.classList.add('show'); }, 10);
+            showMoreBtn.innerText = 'Скрыть';
+          }
+        });
+      }
 
-            showMoreBtn.addEventListener("click", function () {
-                if (hiddenSection.classList.contains("show")) {
-                    hiddenSection.classList.remove("show");
-                    setTimeout(() => { hiddenSection.style.display = "none"; }, 500);
-                    showMoreBtn.innerText = "Показать ещё";
-                } else {
-                    hiddenSection.style.display = "block";
-                    setTimeout(() => { hiddenSection.classList.add("show"); }, 10);
-                    showMoreBtn.innerText = "Скрыть";
-                }
-            });
-        }
+      // Кнопка «Показать ещё» для спецтехники
+      var hiddenEquipment = document.getElementById('hidden-special-equipment');
+      var showMoreEquipmentBtn = document.getElementById('show-more-equipment');
 
-        // Код для кнопки "Показать ещё" в спецтехнике
-        var hiddenEquipment = document.getElementById("hidden-special-equipment");
-        var showMoreEquipmentBtn = document.getElementById("show-more-equipment");
-
-        if (hiddenEquipment && showMoreEquipmentBtn) {
-            hiddenEquipment.classList.remove("show");
-
-            showMoreEquipmentBtn.addEventListener("click", function () {
-                if (hiddenEquipment.classList.contains("show")) {
-                    hiddenEquipment.classList.remove("show");
-                    setTimeout(() => { hiddenEquipment.style.display = "none"; }, 500);
-                    showMoreEquipmentBtn.innerText = "Показать ещё";
-                } else {
-                    hiddenEquipment.style.display = "block";
-                    setTimeout(() => { hiddenEquipment.classList.add("show"); }, 10);
-                    showMoreEquipmentBtn.innerText = "Скрыть";
-                }
-            });
-        }
+      if (hiddenEquipment && showMoreEquipmentBtn) {
+        hiddenEquipment.classList.remove('show');
+        showMoreEquipmentBtn.addEventListener('click', function () {
+          if (hiddenEquipment.classList.contains('show')) {
+            hiddenEquipment.classList.remove('show');
+            setTimeout(() => { hiddenEquipment.style.display = 'none'; }, 500);
+            showMoreEquipmentBtn.innerText = 'Показать ещё';
+          } else {
+            hiddenEquipment.style.display = 'block';
+            setTimeout(() => { hiddenEquipment.classList.add('show'); }, 10);
+            showMoreEquipmentBtn.innerText = 'Скрыть';
+          }
+        });
+      }
     });
-</script>
-
-
-
-
+  </script>
 </body>
 </html>
-
-

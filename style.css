@@ -5,6 +5,10 @@ Updated specifically so the logo (smaller) and company name appear on the left i
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
 html, body {
   margin: 0;
   padding: 0;
@@ -14,6 +18,7 @@ html, body {
   background: #000;
   color: #f0f0f0;
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 header {
@@ -115,6 +120,8 @@ main {
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
+
+
 
 h1 {
   font-size: 48px;
@@ -385,7 +392,7 @@ p {
     justify-content: center;
   }
   
-  /* .mineral-list li {
+  .mineral-list li {
     line-height: 1.6;
     font-size: 18px;
     display: flex;
@@ -394,7 +401,7 @@ p {
     flex-wrap: nowrap;
     width: 100%;
     max-width: 100%;
-  } */
+  }
   
   .mineral-list svg {
     width: 20px;
@@ -406,62 +413,118 @@ p {
   }
   
   .mineral-list li span {
-    /* flex: 1;
+    flex: 1;
     display: block;
-    min-width: 0; */
+    min-width: 0;
     overflow-wrap: break-word;
     word-break: normal;
     white-space: normal;
   }
+
+  .metal-wrapper {
+    text-align: center;
+    box-sizing: border-box;
+  }
+
   
   
-
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
+  
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 1400px;
+    }
   }
 
-  .header-left-group {
-    margin-bottom: 10px;
+  @media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 10px;
+      }
+    
+      .header-left-group {
+        margin-bottom: 10px;
+        gap: 5px;
+      }
+    
+      nav ul {
+        flex-wrap: wrap;
+        margin-top: 10px;
+      }
+  
+      .section-video {
+        text-align: center;
+        justify-content: center;
+      }
+    
+      .video-overlay {
+        position: absolute;
+        padding: 20px;
+        text-align: center;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        transform: none;
+      }
+    
+      .video-overlay .header-text {
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+    
+      .video-overlay .header-text h1 {
+        font-size: 28px;
+      }
+    
+      .video-overlay .header-text p {
+        font-size: 16px;
+      }
+    
+      .info-block,
+      .info-block.reverse {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        margin: 40px auto;
+        padding: 0 16px;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 100%;
+      }
+    
+      .info-video {
+        width: 100%;
+        max-width: 100%;
+      }
+    
+      .info-content {
+        width: 100%;
+        text-align: center;
+        padding: 0 16px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      .mineral-list {
+        padding: 0;
+        margin: 0 auto;
+      }
+    
+      .mineral-list li {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+        width: 100%;
+      }
+    
+      .mineral-list li span {
+        text-align: left;
+      }
   }
-
-  nav ul {
-    flex-wrap: wrap;
-    margin-top: 10px;
-  }
-
-  .container {
-    padding: 10px;
-  }
-
-  h1 {
-    font-size: 28px;
-  }
-
-  h2 {
-    font-size: 24px;
-  }
-
-  h3 {
-    font-size: 20px;
-  }
-
-  p {
-    font-size: 16px;
-  }
-
-  .section-video {
-    height: 300px;
-  }
-
-  .video-overlay h1 {
-    font-size: 20px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1400px;
-  }
-}
+  

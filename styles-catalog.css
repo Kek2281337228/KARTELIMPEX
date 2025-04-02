@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+html, body {
+ margin: 0;
+ padding: 0;
+ overflow-x: hidden;
+ width: 100%;
+ height: 100%;
+ font-family: 'Montserrat', sans-serif;
+ background: #000;
+ color: #f0f0f0;
+ scroll-behavior: smooth;
+ box-sizing: border-box;
+}
+
+header {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100px;
+ background: linear-gradient(45deg, #222, #111);
+ backdrop-filter: blur(10px);
+ z-index: 1000;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 10px 40px; /* увеличенный внутренний отступ */
+ box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+ transition: background 0.3s;
+ box-sizing: border-box;
+}
+
+.logo-container {
+ display: flex;
+ align-items: center;
+ gap: 10px; /* отступ между логотипом и текстом */
+ text-decoration: none;
+}
+
+.company-name {
+ font-size: 24px;
+ font-weight: 600;
+ color:#f0f0f0;
+}
+
+.header-left-group {
+ display: flex;
+ align-items: center;
+ gap: 10px;
+}
+
+.logo {
+ width: 60px;
+ max-width: 100px;
+ height: auto;
+ transition: transform 0.3s ease-in-out;
+ border-radius: 4px;
+}
+
+.logo:hover {
+ transform: scale(1.05);
+}
+
+.company-name {
+ font-size: 24px;
+ font-weight: 600;
+}
+
+body {
+ margin: 0;
+ background-color: #121212;
+ color: #eee;
+ font-family: 'Segoe UI', sans-serif;
+ padding-top: 80px;
+}
+.category {
+ padding: 40px;
+ margin-bottom: 60px;
+}
+
+.category-title {
+ font-size: 24px;
+ margin-bottom: 20px;
+ padding-left: 40px;
+}
+
+.product-title {
+ padding: 12px;
+ font-size: 18px;
+ font-weight: 500;
+ text-align: center;
+ color: #eee;
+}
+
+.carousel-wrapper {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 16px;
+ width: 100%;
+}
+
+.carousel {
+ flex: 1;
+ display: flex;
+ gap: 30px;
+ overflow-x: auto;
+ scroll-behavior: smooth;
+ scrollbar-width: none;
+ -ms-overflow-style: none;
+}
+
+.product-card {
+ flex: 0 0 auto;
+ width: 340px;
+ height: 400px;
+ background-color: #1e1e1e;
+ border-radius: 12px;
+ overflow: hidden;
+ position: relative;
+ color: #fff;
+ transition: transform 0.3s ease;
+ box-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+}
+
+.product-card:hover {
+ transform: scale(1.02);
+}
+
+.image-container {
+ position: relative;
+ width: 100%;
+ height: 70%;
+ background-color: #2b2b2b;
+ overflow: hidden;
+}
+
+.image-container img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ transition: filter 0.3s ease;
+}
+
+.hover-info {
+ position: absolute;
+ inset: 0;
+ background-color: rgba(0, 0, 0, 0.6);
+ color: #ddd;
+ opacity: 0;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ font-size: 14px;
+ transition: opacity 0.3s ease;
+ text-align: center;
+ padding: 10px;
+}
+
+.image-container:hover .hover-info {
+ opacity: 1;
+}
+
+.image-container:hover img {
+ filter: brightness(0.4);
+}
+
+.product-info {
+ padding: 0 16px;
+ height: 30%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+
+.product-info h3 {
+ font-size: 20px;
+ font-weight: 600;
+ margin: 0 0 10px;
+ color: #fff;
+}
+
+.price {
+ font-size: 15px;
+ color: #aaa;
+ margin-bottom: 10px;
+}
+
+.product-info p {
+ margin: 0;
+ font-size: 14px;
+ color: #ccc;
+}
+
+.scroll-btn {
+ background: #2e2e2e;
+ color: white;
+ border: none;
+ border-radius: 50%;
+ width: 42px;
+ height: 42px;
+ font-size: 20px;
+ cursor: pointer;
+ transition: background 0.2s ease;
+ box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+ flex-shrink: 0;
+}
+
+.scroll-btn:hover {
+ background: #444;
+}
+
+.scroll-btn.left {
+ left: -18px;
+}
+
+.scroll-btn.right {
+ right: -18px;
+}
+
+.carousel {
+ display: flex;
+ gap: 30px;
+ overflow-x: auto;
+ scroll-behavior: smooth;
+ scrollbar-width: none;
+ -ms-overflow-style: none;
+}
+
+.carousel::-webkit-scrollbar {
+ display: none;
+}

@@ -1,7 +1,4 @@
-/*
-Cleaned-up style.css — Now with a stylish, modern dark theme
-Updated specifically so the logo (smaller) and company name appear on the left in the header.
-*/
+
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 
@@ -27,6 +24,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  height: 100px;
   background: linear-gradient(45deg, #222, #111);
   backdrop-filter: blur(10px);
   z-index: 1000;
@@ -53,6 +51,13 @@ header {
   border-radius: 4px;
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* отступ между логотипом и текстом */
+  text-decoration: none;
+}
+
 .logo:hover {
   transform: scale(1.05);
 }
@@ -60,6 +65,7 @@ header {
 .company-name {
   font-size: 24px;
   font-weight: 600;
+  color:#f0f0f0;
 }
 
 nav {
@@ -73,6 +79,22 @@ nav ul {
   margin: 0;
   display: flex;
   gap: 15px;
+  align-items: center;
+}
+
+.catalog_button {
+  background-color: white !important;
+  color: black !important;
+  padding: 6px 14px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  text-decoration: none !important;
+}
+
+.catalog_button:hover {
+  background-color: #969696 !important;
 }
 
 nav ul li a {
@@ -462,6 +484,7 @@ p {
     header {
         flex-direction: column;
         align-items: flex-start;
+        height: auto;
         padding: 10px 10px;
       }
     
@@ -533,7 +556,7 @@ p {
       }
     
       .video-overlay .header-text h1 {
-        font-size: 18px;
+        font-size: 24px;
       }
     
       .video-overlay .header-text p {
